@@ -13,6 +13,10 @@ h2 {
   margin: 0 auto;
 }
 
+label {
+  cursor: pointer;
+}
+
 .mem {
   color: #196CF9FF;
   border-top: solid 3px lightgrey;
@@ -44,17 +48,21 @@ img {
   width: 40%;
 }
 
-.css-bayan:hover .icon {
+.mem:hover .icon {
   display: block;
 }
 
-.css-bayan:hover .icon {
+.mem:hover .icon {
   display: block;
 }
 
-.css-bayan:hover .title,
+.mem:hover .title,
 input[name="mems"]:checked ~ .title {
   color: black;
+}
+
+.mem:active .title {
+  color: #196CF9FF;
 }
 
 input[name="mems"]:checked ~ .title .material-icons {
@@ -76,4 +84,3 @@ input[value="interface"]:checked ~ .interface-img {
 input[value="environment"]:checked ~ .environment-img {
   display: block;
 }
-
