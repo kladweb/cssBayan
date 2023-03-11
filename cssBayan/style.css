@@ -1,0 +1,79 @@
+.css-bayan {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.css-bayan {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.mem {
+  color: #196CF9FF;
+  border-top: solid 3px lightgrey;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[name="mems"] {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+.material-icons {
+  display: none;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+img {
+  display: none;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.css-bayan:hover .icon {
+  display: block;
+}
+
+.css-bayan:hover .icon {
+  display: block;
+}
+
+.css-bayan:hover .title,
+input[name="mems"]:checked ~ .title {
+  color: black;
+}
+
+input[name="mems"]:checked ~ .title .material-icons {
+  display: block;
+}
+
+input[name="mems"]:checked ~ .title .open {
+  display: none;
+}
+
+input[value="interface"]:checked ~ .interface-img {
+  display: block;
+}
+
+.mem:hover img {
+  display: block;
+}
+
+input[value="environment"]:checked ~ .environment-img {
+  display: block;
+}
+
