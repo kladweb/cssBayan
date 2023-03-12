@@ -39,25 +39,28 @@ input[name="mems"] {
 }
 
 .icon {
-  display: none;
+  -webkit-transition: 100ms;
+  transition: 100ms;
 }
 
 .material-icons {
   display: none;
-  vertical-align: middle;
+  padding: 0;
+  margin: -1rem 0;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 img {
   display: block;
   margin: 0 auto;
   width: 0;
-  -webkit-transition: width 100ms;
-  transition: width 20ms ease-out;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
 
-.css-bayan:hover .icon {
-  display: block;
+.css-bayan:hover .material-icons {
+  display: inline-block;
 }
 
 .mem:hover .title,
@@ -73,19 +76,23 @@ input[name="mems"]:checked ~ .title {
   opacity: 0.8;
 }
 
-input[name="mems"]:checked ~ .title .material-icons {
-  display: block;
-}
-
-input[name="mems"]:checked ~ .title .open {
-  display: none;
+input[name="mems"]:checked ~ .title .icon {
+  transform: rotate(45deg);
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .mem:hover img {
   padding: 1rem 0;
   width: 25rem;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out 0.2s;
+  transition: 0.3s ease-out 0.2s;
+}
+
+.mem:hover .icon {
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 input[value="interface"]:checked ~ .interface-img {
@@ -108,10 +115,10 @@ input[value="back"]:checked ~ .back-img {
   width: 25rem;
 }
 
-
-
-
-
+input[value="comments"]:checked ~ .comments-img {
+  padding: 1rem 0;
+  width: 25rem;
+}
 
 .css-bayan:hover label {
   color: black;
