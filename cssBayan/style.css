@@ -4,6 +4,8 @@
 }
 
 .css-bayan {
+  width: 50%;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
@@ -12,11 +14,6 @@
 h2 {
   font-size: 2rem;
   padding: 1rem 0;
-}
-
-.css-bayan {
-  width: 50%;
-  margin: 0 auto;
 }
 
 label {
@@ -59,13 +56,70 @@ img {
   transition: 0.1s ease-out;
 }
 
-.css-bayan:hover .material-icons {
-  display: inline-block;
-}
-
-.mem:hover .title,
 input[name="mems"]:checked ~ .title {
   color: black;
+}
+
+input[name="mems"]:checked ~ .title .icon {
+  transform: rotate(45deg);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+input[value="interface"]:checked ~ .interface-img {
+  padding: 1rem 0;
+  width: 45%;
+}
+
+input[value="environment"]:checked ~ .environment-img {
+  padding: 1rem 0;
+  width: 45%;
+}
+
+input[value="beginner"]:checked ~ .beginner-img {
+  padding: 1rem 0;
+  width: 45%;
+}
+
+input[value="back"]:checked ~ .back-img {
+  padding: 1rem 0;
+  width: 45%;
+}
+
+input[value="comments"]:checked ~ .comments-img {
+  padding: 1rem 0;
+  width: 45%;
+}
+
+@media (hover: hover) {
+  .css-bayan:hover .material-icons {
+    display: inline-block;
+  }
+
+  .mem:hover .title {
+    color: black;
+  }
+
+  .mem:hover img {
+    padding: 1rem 0;
+    width: 45%;
+    -webkit-transition: 0.3s ease-out 0.2s;
+    transition: 0.4s ease-out 0.2s;
+  }
+
+  .mem:hover .icon {
+    transform: rotate(45deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .css-bayan:hover label {
+    color: black;
+  }
+
+  .mem:hover .icon {
+    display: block;
+  }
 }
 
 .mem:active .title {
@@ -76,54 +130,54 @@ input[name="mems"]:checked ~ .title {
   opacity: 0.8;
 }
 
-input[name="mems"]:checked ~ .title .icon {
-  transform: rotate(45deg);
-  -webkit-transition: 200ms;
-  transition: 200ms;
+@media (max-width: 1180px) {
+  .css-bayan {
+    width: 90%;
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
 }
 
-.mem:hover img {
-  padding: 1rem 0;
-  width: 25rem;
-  -webkit-transition: 0.3s ease-out 0.2s;
-  transition: 0.3s ease-out 0.2s;
-}
+@media (max-width: 568px) {
+  .css-bayan {
+    width: 90%;
+    font-size: 0.75rem;
+  }
 
-.mem:hover .icon {
-  transform: rotate(45deg);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
+  h2 {
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+  }
 
-input[value="interface"]:checked ~ .interface-img {
-  padding: 1rem 0;
-  width: 25rem;
-}
+  .mem {
+    padding: 0.5rem 0;
+  }
 
-input[value="environment"]:checked ~ .environment-img {
-  padding: 1rem 0;
-  width: 25rem;
-}
+  input[value="interface"]:checked ~ .interface-img {
+    padding: 0.5rem 0;
+    width: 70%;
+  }
 
-input[value="beginner"]:checked ~ .beginner-img {
-  padding: 1rem 0;
-  width: 25rem;
-}
+  input[value="environment"]:checked ~ .environment-img {
+    padding: 0.5rem 0;
+    width: 70%;
+  }
 
-input[value="back"]:checked ~ .back-img {
-  padding: 1rem 0;
-  width: 25rem;
-}
+  input[value="beginner"]:checked ~ .beginner-img {
+    padding: 0.5rem 0;
+    width: 70%;
+  }
 
-input[value="comments"]:checked ~ .comments-img {
-  padding: 1rem 0;
-  width: 25rem;
-}
+  input[value="back"]:checked ~ .back-img {
+    padding: 0.5rem 0;
+    width: 70%;
+  }
 
-.css-bayan:hover label {
-  color: black;
-}
-
-.mem:hover .icon {
-  display: block;
+  input[value="comments"]:checked ~ .comments-img {
+    padding: 0.5rem 0;
+    width: 70%;
+  }
 }
